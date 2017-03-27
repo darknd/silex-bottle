@@ -2,11 +2,11 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 
 /**
  * Class MonologServiceLoader
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class MonologServiceLoader extends config\ServiceLoader\BaseMonologServiceLoader {}
+class MonologServiceLoader extends Config\ServiceLoader\BaseMonologServiceLoader {}

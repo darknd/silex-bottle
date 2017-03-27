@@ -5,7 +5,7 @@ namespace app\Config\Interfaces;
 /**
  * Interface Loadable
  *
- * @package app\config\Interfaces
+ * @package app\Config\Interfaces
  */
 interface Loadable
 {

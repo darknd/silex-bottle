@@ -2,13 +2,14 @@
 
 namespace app\Config\Bridge;
 
-use app\config\Interfaces\Loadable;
+use app\Config\Interfaces\Loadable;
 use Silex\Application;
+
 
 /**
  * Class Instructor
  *
- * @package app\config\Bridges
+ * @package app\Config\Bridge
  */
 abstract class BaseInstructor implements Loadable
 {
@@ -101,7 +102,7 @@ abstract class BaseInstructor implements Loadable
     {
         foreach ($this->_routes as $route) {
             /**
-             * @var $route \app\config\Bridge\Router
+             * @var $route \app\Config\Bridge\Router
              */
             $route->load();
         }
@@ -111,7 +112,7 @@ abstract class BaseInstructor implements Loadable
     {
         foreach ($this->_services as $service) {
             /**
-             * @var $service \app\config\Bridge\BaseServiceLoader
+             * @var $service \app\Config\Bridge\BaseServiceLoader
              */
             $service->load();
         }
@@ -121,7 +122,7 @@ abstract class BaseInstructor implements Loadable
     {
         foreach ($this->_configs as $config) {
             /**
-             * @var $service \app\config\Bridge\BaseConfigLoader
+             * @var $service \app\Config\Bridge\BaseConfigLoader
              */
             $config->load();
         }
@@ -131,7 +132,7 @@ abstract class BaseInstructor implements Loadable
     {
         foreach ($this->_middlewares as $middleware) {
             /**
-             * @var $service \app\config\Bridge\BaseConfigLoader
+             * @var $service \app\Config\Bridge\BaseConfigLoader
              */
             $middleware->load();
         }

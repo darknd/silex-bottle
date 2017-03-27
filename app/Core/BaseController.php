@@ -2,7 +2,6 @@
 
 namespace app\Core;
 
-use Topikito\Acme\Helper;
 use Silex\Application;
 
 class BaseController

@@ -8,7 +8,7 @@ use Silex\Provider\SecurityServiceProvider;
 /**
  * Class BaseSecurityBaseServiceLoader
  *
- * @package app\config\ServiceLoader
+ * @package app\Config\ServiceLoader
  */
 class BaseSecurityServiceLoader extends BaseServiceLoader
 {

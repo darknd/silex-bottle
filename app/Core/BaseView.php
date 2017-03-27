@@ -7,7 +7,7 @@ use Silex\Application;
 /**
  * Class View
  *
- * @package app\core
+ * @package app\Core
  */
 class BaseView
 {
@@ -133,7 +133,7 @@ class BaseView
     /**
      * @param $minify
      *
-     * @return app\core\View
+     * @return app\Core\View
      */
     public function setMinifyOutput($minifyOutput = true)
     {

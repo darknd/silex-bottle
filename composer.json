@@ -16,11 +16,15 @@
         "swiftmailer/swiftmailer": "5.*",
         "ruflin/elastica": "*",
         "mandrill/mandrill": "1.*",
-        "tedivm/jshrink": "*"
+        "tedivm/jshrink": "*",
+        "symfony/security": "*",
+        "symfony/monolog-bundle": "*",
+        "symfony/translation": "*"
     },
     "require-dev": {
         "phpmd/phpmd" : "2.0.*",
         "silex/web-profiler": "1.*",
-        "phpunit/phpunit": "4.2.*"
+        "phpunit/phpunit": "4.2.*",
+        "symfony/browser-kit": "*"
     }
 }

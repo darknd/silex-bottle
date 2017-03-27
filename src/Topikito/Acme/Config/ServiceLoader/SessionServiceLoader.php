@@ -2,11 +2,11 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 
 /**
  * Class SessionServiceLoader
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class SessionServiceLoader extends config\ServiceLoader\BaseSessionServiceLoader {}
+class SessionServiceLoader extends Config\ServiceLoader\BaseSessionServiceLoader {}

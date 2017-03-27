@@ -9,7 +9,7 @@ use Symfony\Bridge\Monolog\Logger;
 /**
  * Class BaseMonologBaseServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseMonologServiceLoader extends BaseServiceLoader
 {

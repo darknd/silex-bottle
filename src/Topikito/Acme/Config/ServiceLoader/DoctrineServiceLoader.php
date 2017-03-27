@@ -2,11 +2,11 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 
 /**
  * Class Doctrine
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class DoctrineServiceLoader extends config\ServiceLoader\BaseDoctrineServiceLoader {}
+class DoctrineServiceLoader extends Config\ServiceLoader\BaseDoctrineServiceLoader {}

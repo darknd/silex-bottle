@@ -9,7 +9,7 @@ use \Redis;
 /**
  * Class BaseRedisProvider
  *
- * @package app\config\Provider
+ * @package app\Config\Provider
  */
 class BaseRedisServiceProvider implements ServiceProviderInterface
 {

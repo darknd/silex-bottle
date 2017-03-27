@@ -7,6 +7,7 @@ require_once 'autoload.php';
 use Silex;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Topikito\Acme\Config\Instructor;
 
 /**
  * Class ApplicationBootstrap
@@ -27,7 +28,6 @@ class Bootstrap
     {
         $this->_app = new Silex\Application();
         $this->_app['env.name'] = $env;
-
         $this->_loadEnvironment();
     }
 
@@ -46,17 +46,19 @@ class Bootstrap
             'commit.hash' => $commitHash,
             'commit.id' => $commitId
         ];
+
+
     }
 
     public function loadInstructors()
     {
         $instructors = [
-            new \Topikito\Acme\Config\Instructor($this->_app)
+            new Instructor($this->_app)
         ];
 
         foreach ($instructors as $instructor) {
             /**
-             * @var $instructor \app\config\Bridge\BaseInstructor
+             * @var $instructor \app\Config\Bridge\BaseInstructor
              */
             $instructor->load();
         }

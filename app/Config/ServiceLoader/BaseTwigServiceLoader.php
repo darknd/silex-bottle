@@ -8,7 +8,7 @@ use Silex\Provider\TwigServiceProvider;
 /**
  * Class BaseTwigServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseTwigServiceLoader extends BaseServiceLoader
 {

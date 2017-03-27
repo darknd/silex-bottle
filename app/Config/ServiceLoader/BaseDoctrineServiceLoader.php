@@ -8,7 +8,7 @@ use Silex\Provider\DoctrineServiceProvider;
 /**
  * Class BaseDoctrineBaseServiceLoader
  *
- * @package app\config\ServiceLoader
+ * @package app\Config\ServiceLoader
  */
 class BaseDoctrineServiceLoader extends BaseServiceLoader
 {

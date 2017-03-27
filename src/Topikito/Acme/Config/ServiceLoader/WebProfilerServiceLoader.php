@@ -2,11 +2,11 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 
 /**
  * Class WebProfilerServiceLoader
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class WebProfilerServiceLoader extends config\ServiceLoader\BaseWebProfilerServiceLoader {}
+class WebProfilerServiceLoader extends Config\ServiceLoader\BaseWebProfilerServiceLoader {}

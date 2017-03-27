@@ -9,7 +9,7 @@ use Silex\Application;
 /**
  * Class BaseRedisServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseRedisServiceLoader extends BaseServiceLoader
 {

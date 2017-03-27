@@ -2,7 +2,7 @@
 
 namespace app\Config\Bridge;
 
-use app\config\Interfaces\Loadable;
+use app\Config\Interfaces\Loadable;
 
 /**
  * Class BaseConfigLoader
@@ -55,7 +55,7 @@ class BaseConfigLoader implements Loadable
      */
     protected function _getConfigFileRoute()
     {
-        $route = dirname(dirname(dirname(__DIR__))) . '/src/' . str_replace('\\', '/' , $this->_namespace) . '/resources/config.ini';
+        $route = dirname(dirname(__DIR__)) . '/src/' . str_replace('\\', '/' , $this->_namespace) . '/resources/config.ini';
         if (!file_exists($route)) {
             throw new \Exception('No config found for namespace ' . $this->_namespace);
         }
@@ -69,6 +69,7 @@ class BaseConfigLoader implements Loadable
      */
     protected function _parseConfigFile()
     {
+        /*
         $configKey = 'app:config';
         $configTtl = '10'; //seconds
 
@@ -84,7 +85,9 @@ class BaseConfigLoader implements Loadable
             $redis->setex($configKey, $configTtl, $config);
         }
 
-        return $config;
+        return $config;*/
+        $config = parse_ini_file(dirname(dirname(__DIR__)) . '/../src/Topikito/Acme/Config/resources/config.ini', TRUE);
+        return $config[$this->_app['env.name']];
     }
 
     /**
@@ -94,7 +97,7 @@ class BaseConfigLoader implements Loadable
     {
         $config['app.host'] = $config['app.default_protocol'] . $config['app.hostname'];
 
-        $autoHost = isset($_SERVER['HTTP_HOST'])? $_SERVER['HTTP_HOST'] :$config['app.hostname'];
+        $autoHost = isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : $config['app.hostname'];
 
         $config['app.auto.host']            = $config['app.default_protocol'] . $autoHost;
         $config['app.auto.hostname']        = $autoHost;

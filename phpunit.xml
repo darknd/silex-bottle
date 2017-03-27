@@ -10,7 +10,8 @@
          syntaxCheck="false"
 		>
     <php>
-        <env name="APPLICATION_ENV" value="local-roberto" />
+        <!--<env name="APPLICATION_ENV" value="local-roberto" />-->
+        <env name="APPLICATION_ENV" value="common" />
     </php>
 
     <testsuites>

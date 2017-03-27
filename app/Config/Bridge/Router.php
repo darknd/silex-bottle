@@ -2,10 +2,10 @@
 
 namespace app\Config\Bridge;
 
-use app\config\Interfaces\Loadable;
+use app\Config\Interfaces\Loadable;
 use Silex;
 
-abstract class BaseMiddleware implements Loadable
+abstract class Router implements Loadable
 {
 
     /**

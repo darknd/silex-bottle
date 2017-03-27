@@ -2,9 +2,9 @@
 
 namespace Tests\Unit;
 
-require_once 'app/config/autoload.php';
+require_once 'app/Config/autoload.php';
 
-use \Silex\WebTestCase;
+use Silex\WebTestCase;
 
 class FrameworkTestCase extends WebTestCase {
 

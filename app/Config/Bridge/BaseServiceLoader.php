@@ -2,13 +2,13 @@
 
 namespace app\Config\Bridge;
 
-use app\config\Interfaces\Loadable;
+use app\Config\Interfaces\Loadable;
 use Silex\Application;
 
 /**
  * Class Service
  *
- * @package app\config\Bridges
+ * @package app\Config\Bridges
  */
 abstract class BaseServiceLoader implements Loadable
 {

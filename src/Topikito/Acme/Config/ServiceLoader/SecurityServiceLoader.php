@@ -2,7 +2,7 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 use Topikito\Acme\Provider\SecurityUserProvider;
 use Silex\Provider\SecurityServiceProvider;
 
@@ -11,7 +11,7 @@ use Silex\Provider\SecurityServiceProvider;
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class SecurityServiceLoader extends config\ServiceLoader\BaseSecurityServiceLoader
+class SecurityServiceLoader extends Config\ServiceLoader\BaseSecurityServiceLoader
 {
 
     public function load()

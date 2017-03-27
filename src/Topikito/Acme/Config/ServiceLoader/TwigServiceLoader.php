@@ -2,7 +2,7 @@
 
 namespace Topikito\Acme\Config\ServiceLoader;
 
-use app\config;
+use app\Config;
 use Silex\Provider\TwigServiceProvider;
 
 /**
@@ -10,7 +10,7 @@ use Silex\Provider\TwigServiceProvider;
  *
  * @package Topikito\Acme\Config\ServiceLoader
  */
-class TwigServiceLoader extends config\ServiceLoader\BaseTwigServiceLoader
+class TwigServiceLoader extends Config\ServiceLoader\BaseTwigServiceLoader
 {
 
     public function load()

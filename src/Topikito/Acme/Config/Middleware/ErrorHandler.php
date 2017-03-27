@@ -2,7 +2,7 @@
 
 namespace Topikito\Acme\Config\Middleware;
 
-use app\config\Bridge\BaseMiddleware;
+use app\Config\Bridge\BaseMiddleware;
 use app;
 
 class ErrorHandler extends BaseMiddleware

@@ -10,7 +10,7 @@ use Silex\Provider\WebProfilerServiceProvider;
 /**
  * Class BaseWebProfilerService
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseWebProfilerServiceLoader extends BaseServiceLoader
 {

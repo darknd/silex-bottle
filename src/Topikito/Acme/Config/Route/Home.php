@@ -2,7 +2,7 @@
 
 namespace Topikito\Acme\Config\Route;
 
-use app\config\Bridge\Router;
+use app\Config\Bridge\Router;
 use Silex\Application;
 use \Topikito\Acme\Controller;
 

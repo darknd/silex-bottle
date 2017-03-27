@@ -8,7 +8,7 @@ use Silex\Provider\TranslationServiceProvider;
 /**
  * Class BaseTranslatorBaseServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseTranslatorServiceLoader extends BaseServiceLoader
 {

@@ -8,7 +8,7 @@ use Silex\Provider\HttpCacheServiceProvider;
 /**
  * Class BaseHttpCacheBaseServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseHttpCacheServiceLoader extends BaseServiceLoader
 {

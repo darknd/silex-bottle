@@ -5,7 +5,7 @@ namespace app\Config;
 /**
  * Class AutoLoader
  *
- * @package app\config
+ * @package app\Config
  */
 class Autoloader
 {
@@ -24,7 +24,7 @@ class Autoloader
      */
     public function load($className)
     {
-        if (strpos($className, 'app') !== 0) {
+        if (strpos($className, 'app') === false) {
             $className = 'src\\' . $className;
         }
 
@@ -37,6 +37,7 @@ class Autoloader
         }
         $dirName .= str_replace('_', DIRECTORY_SEPARATOR, $className) . '.php';
         $dirName = $this->_root . DIRECTORY_SEPARATOR . $dirName;
+        //print_r($dirName."\n");
 
         if (file_exists($dirName)) {
             $result = require_once $dirName;

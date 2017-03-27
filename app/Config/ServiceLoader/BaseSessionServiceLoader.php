@@ -9,7 +9,7 @@ use Silex\Provider\SessionServiceProvider;
 /**
  * Class BaseSessionBaseServiceLoader
  *
- * @package app\config\Service
+ * @package app\Config\Service
  */
 class BaseSessionServiceLoader extends BaseServiceLoader
 {
