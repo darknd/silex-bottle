@@ -5,8 +5,8 @@
  */
 $app  = require_once __DIR__ . '/../../../../app/Config/Bootstrap.php';
 
-if ($app['config']['app.cache.enabled'] == true) {
+/*if ($app['config']['app.cache.enabled'] == true) {
     $app['http_cache']->run();
-} else {
+} else {*/
     $app->run();
-}
+//}

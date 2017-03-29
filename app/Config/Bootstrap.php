@@ -4,6 +4,7 @@ namespace app\Config;
 
 require_once 'autoload.php';
 
+use Monolog\Logger;
 use Silex;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -71,10 +72,12 @@ class Bootstrap
     public function loadMiddleware()
     {
         /* BEFORE APP STARTS */
-        $this->_app->before(function (Request $request) { });
+        $this->_app->before(function (Request $request) {
+        });
 
         /* BEFORE APP FINISHES */
-        $this->_app->after(function (Request $request, Response $response) { });
+        $this->_app->after(function (Request $request, Response $response) {
+        });
     }
 
     /**

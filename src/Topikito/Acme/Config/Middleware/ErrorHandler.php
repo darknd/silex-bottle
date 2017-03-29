@@ -49,10 +49,10 @@ class ErrorHandler extends BaseMiddleware
                     $params['eTrace'] = $eTrace;
                 }
 
-                $view  = new app\core\BaseView($this->_app);
+                $view  = new app\Core\BaseView($this->_app);
                 $html = $view->render('Error\index.html.twig', $params);
 
-                return new app\core\BaseResponse($html, $code);
+                return new app\Core\BaseResponse($html, $code);
             });
     }
 
