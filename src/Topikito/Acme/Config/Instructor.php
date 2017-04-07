@@ -49,7 +49,8 @@ class Instructor extends BaseInstructor
     public function prepareMiddlewares()
     {
         $middlewares = [
-            new Config\Middleware\ErrorHandler($this->_app)
+            new Config\Middleware\ErrorHandler($this->_app),
+            new Config\Middleware\MonologHandler($this->_app)
         ];
 
         $this->_addMiddlewares($middlewares);
